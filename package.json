@@ -1,0 +1,21 @@
+{
+  "name": "sistema-vendas-comissoes",
+  "version": "1.1.0",
+  "description": "API REST acadêmica para vendas, comissões, metas e performance usando Node.js, Express e MySQL.",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "check": "node --check src/server.js && node --check src/db.js && node --check src/funcoes.js && node --check src/rotas.js && node --check testes/comissao.test.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "dependencies": {
+    "dotenv": "18.0.8",
+    "express": "5.3.0",
+    "mysql2": "3.24.6"
+  }
+}
